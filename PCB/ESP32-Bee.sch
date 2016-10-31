@@ -31,6 +31,7 @@ LIBS:valves
 LIBS:HydroPWNics_Lib
 LIBS:OnHand-Components-Sym
 LIBS:ESP32-footprints-Shem-Lib
+LIBS:ESP32-Bee-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1052,177 +1053,54 @@ Text Label 6250 3750 0    60   ~ 0
 GPIO21
 Text Label 9700 3925 0    60   ~ 0
 GPIO21
-$Comp
-L MI0603K300R-10 FB1
-U 1 1 580BEE00
-P 2675 6650
-F 0 "FB1" H 2675 6881 60  0000 C CNN
-F 1 "MI0603K300R-10" H 2675 6900 60  0001 C CNN
-F 2 "PCB_Footprints:MI0603K300R-10" H 2225 6700 60  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Steward%20PDFs/Part%20Number%20Guide.pdf" H 2325 6800 60  0001 C CNN
-F 4 "0.02508 @ 1000" H 2425 6900 60  0001 C CNN "Cost"
-F 5 "8 Sept 2016" H 2525 7000 60  0001 C CNN "Date Created "
-F 6 "8 Sept 2016" H 2625 7100 60  0001 C CNN "Date Modified"
-F 7 "Adam Vadala-Roth" H 2725 7200 60  0001 C CNN "Designer "
-F 8 "0.95mm" H 2825 7300 60  0001 C CNN "Height"
-F 9 "Yest" H 2925 7400 60  0001 C CNN "RHoS?"
-F 10 "Laird-Signal Integrity Products" H 3025 7500 60  0001 C CNN "MFR"
-F 11 "MI0603K300R-10" H 3125 7600 60  0001 C CNN "MFR#"
-F 12 "SMT/SMD" H 3225 7700 60  0001 C CNN "Mounting"
-F 13 "2" H 3325 7800 60  0001 C CNN "Pin Count#"
-F 14 "Active" H 3425 7900 60  0001 C CNN "Status"
-F 15 "N/A" H 3525 8000 60  0001 C CNN "Tolerance"
-F 16 "Ferrite  Beard 1.5A" H 3625 8100 60  0001 C CNN "Type"
-F 17 "N/A" H 3725 8200 60  0001 C CNN "Voltage"
-F 18 "N/A" H 3825 8300 60  0001 C CNN "Wattage"
-F 19 "30 ohm @ 100MHZ 1.5A" H 3925 8400 60  0001 C CNN "Component-Value"
-F 20 "FERRITE BEAD 30 OHM 0603 1LN" H 4025 8500 60  0001 C CNN "Description"
-	1    2675 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L CL10A106KQ8NNNC C5
-U 1 1 580BF291
-P 2275 6850
-F 0 "C5" V 2225 6875 60  0000 L CNN
-F 1 "CL10A106KQ8NNNC" V 2300 5850 60  0001 L CNN
-F 2 "PCB_Footprints:C0603" H 1525 6900 60  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2016/08/18/S_CL10A106KQ8NNNC.pdf" H 1625 7000 60  0001 C CNN
-F 4 "0.05145 @ 4000" H 1725 7100 60  0001 C CNN "Cost"
-F 5 "5 Sept 2016" H 1825 7200 60  0001 C CNN "Date Created"
-F 6 "5 Sept 2016" H 1925 7300 60  0001 C CNN "Date Modifed"
-F 7 "Adam Vadala-Roth" H 2025 7400 60  0001 C CNN "Designer"
-F 8 "0.90mm" H 2125 7500 60  0001 C CNN "Height"
-F 9 "Yes" H 2225 7600 60  0001 C CNN "RHoS?"
-F 10 "Samsung Electro-Mechanics America, Inc." H 2325 7700 60  0001 C CNN "MFR"
-F 11 "CL10A106KQ8NNNC" H 2425 7800 60  0001 C CNN "MFR#"
-F 12 "SMT/SMD" H 2525 7900 60  0001 C CNN "Mounting"
-F 13 "2" H 2625 8000 60  0001 C CNN "Pin Count#"
-F 14 "Active" H 2725 8100 60  0001 C CNN "Status"
-F 15 "10%" H 2825 8200 60  0001 C CNN "Tolerance"
-F 16 "Ceramic Capacitor 0603" H 2925 8300 60  0001 C CNN "Type"
-F 17 "6.3V" H 3025 8400 60  0001 C CNN "Voltage"
-F 18 "N/A" H 3575 8400 60  0001 C CNN "Wattage"
-F 19 "10uF" V 2375 6850 60  0000 L CNN "Componen-Value"
-F 20 "10µF 6.3V Ceramic Capacitor X5R 0603 (1608 Metric) 0.063\" L x 0.031\" W (1.60mm x 0.80mm)" H 3775 8600 60  0001 C CNN "Description"
-	1    2275 6850
-	0    1    1    0   
-$EndComp
-$Comp
-L CL05B104JP5NNNC C15
-U 1 1 580BF4F2
-P 3675 6900
-F 0 "C15" V 3597 7028 60  0000 L CNN
-F 1 "CL05B104JP5NNNC" H 3650 7187 60  0001 C CNN
-F 2 "PCB_Footprints:C0402" H 3925 6950 60  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2016/08/18/S_CL05B104JP5NNNC.pdf" H 3925 6950 60  0001 C CNN
-F 4 "$0.00903 @ 5000" H 3575 7150 60  0001 C CNN "Cost"
-F 5 "4 Sept 2016" H 3675 7250 60  0001 C CNN "Date Created"
-F 6 "5 Sept 2016" H 3775 7350 60  0001 C CNN "Date Modified"
-F 7 "Adam Vadala-Roth" H 3875 7450 60  0001 C CNN "Designer"
-F 8 "0.55mm" H 3975 7550 60  0001 C CNN "Height"
-F 9 "Yes" H 4075 7650 60  0001 C CNN "RHoS?"
-F 10 "Samsung Electro-Mechanics America, Inc." H 4175 7750 60  0001 C CNN "MFR"
-F 11 "CL05B104JP5NNNC" H 4275 7850 60  0001 C CNN "MFR#"
-F 12 "SMT/SMD" H 4375 7950 60  0001 C CNN "Mounting"
-F 13 "2" H 4475 8050 60  0001 C CNN "Pint Count#"
-F 14 "Active" H 4575 8150 60  0001 C CNN "Status"
-F 15 "5%" H 4675 8250 60  0001 C CNN "Tolerance"
-F 16 "Ceramic Capacitor 0402" H 4775 8350 60  0001 C CNN "Type"
-F 17 "10V" H 4875 8450 60  0001 C CNN "Voltage"
-F 18 "N/A" H 4975 8550 60  0001 C CNN "Wattage"
-F 19 "0.10uF" V 3703 7028 60  0000 L CNN "Component-Value"
-F 20 "0.10µF 10V Ceramic Capacitor X7R 0402 (1005 Metric) 0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 5175 8750 60  0001 C CNN "Description"
-	1    3675 6900
-	0    1    1    0   
-$EndComp
-$Comp
-L CL05A105KA5NQNC C12
-U 1 1 580BF5D3
-P 3375 6875
-F 0 "C12" V 3300 6900 60  0000 L CNN
-F 1 "CL05A105KA5NQNC" H 3375 7162 60  0001 C CNN
-F 2 "PCB_Footprints:C0402" H 2625 6925 60  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2016/08/18/S_CL05A105KA5NQNC.pdf" H 2725 7025 60  0001 C CNN
-F 4 "0.05618 @ 5000" H 2825 7125 60  0001 C CNN "Cost"
-F 5 "5 Sept 2016" H 2925 7225 60  0001 C CNN "Date Created"
-F 6 "5 Sept 2016" H 3025 7325 60  0001 C CNN "Date Modifed"
-F 7 "Adam Vadala-Roth" H 3125 7425 60  0001 C CNN "Designer"
-F 8 "0.55mm" H 3225 7525 60  0001 C CNN "Height"
-F 9 "Yes" H 3325 7625 60  0001 C CNN "RHoS?"
-F 10 "Samsung Electro-Mechanics America, Inc." H 3425 7725 60  0001 C CNN "MFR"
-F 11 "CL05A105KA5NQNC" H 3525 7825 60  0001 C CNN "MFR#"
-F 12 "SMT/SMD" H 3625 7925 60  0001 C CNN "Mounting"
-F 13 "2" H 3725 8025 60  0001 C CNN "Pin Count#"
-F 14 "Active" H 3825 8125 60  0001 C CNN "Status"
-F 15 "10%" H 3925 8225 60  0001 C CNN "Tolerance"
-F 16 "Ceramic Capacitor 0402" H 4025 8325 60  0001 C CNN "Type"
-F 17 "25V" H 4125 8425 60  0001 C CNN "Voltage"
-F 18 "N/A" H 4675 8425 60  0001 C CNN "Wattage"
-F 19 "1uF" V 3450 6900 60  0000 L CNN "Componen-Value"
-F 20 "1µF 25V Ceramic Capacitor X5R 0402 (1005 Metric) 0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 4875 8625 60  0001 C CNN "Description"
-	1    3375 6875
-	0    1    1    0   
-$EndComp
-$Comp
-L CL10A106KQ8NNNC C10
-U 1 1 580BFDFC
-P 3075 6850
-F 0 "C10" V 3025 6850 60  0000 L CNN
-F 1 "CL10A106KQ8NNNC" V 3100 5850 60  0001 L CNN
-F 2 "PCB_Footprints:C0603" H 2325 6900 60  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2016/08/18/S_CL10A106KQ8NNNC.pdf" H 2425 7000 60  0001 C CNN
-F 4 "0.05145 @ 4000" H 2525 7100 60  0001 C CNN "Cost"
-F 5 "5 Sept 2016" H 2625 7200 60  0001 C CNN "Date Created"
-F 6 "5 Sept 2016" H 2725 7300 60  0001 C CNN "Date Modifed"
-F 7 "Adam Vadala-Roth" H 2825 7400 60  0001 C CNN "Designer"
-F 8 "0.90mm" H 2925 7500 60  0001 C CNN "Height"
-F 9 "Yes" H 3025 7600 60  0001 C CNN "RHoS?"
-F 10 "Samsung Electro-Mechanics America, Inc." H 3125 7700 60  0001 C CNN "MFR"
-F 11 "CL10A106KQ8NNNC" H 3225 7800 60  0001 C CNN "MFR#"
-F 12 "SMT/SMD" H 3325 7900 60  0001 C CNN "Mounting"
-F 13 "2" H 3425 8000 60  0001 C CNN "Pin Count#"
-F 14 "Active" H 3525 8100 60  0001 C CNN "Status"
-F 15 "10%" H 3625 8200 60  0001 C CNN "Tolerance"
-F 16 "Ceramic Capacitor 0603" H 3725 8300 60  0001 C CNN "Type"
-F 17 "6.3V" H 3825 8400 60  0001 C CNN "Voltage"
-F 18 "N/A" H 4375 8400 60  0001 C CNN "Wattage"
-F 19 "10uF" V 3175 6850 60  0000 L CNN "Componen-Value"
-F 20 "10µF 6.3V Ceramic Capacitor X5R 0603 (1608 Metric) 0.063\" L x 0.031\" W (1.60mm x 0.80mm)" H 4575 8600 60  0001 C CNN "Description"
-	1    3075 6850
-	0    1    1    0   
-$EndComp
-$Comp
-L +3.3V #PWR018
-U 1 1 580C18A7
-P 3675 6650
-F 0 "#PWR018" H 3675 6500 50  0001 C CNN
-F 1 "+3.3V" H 3690 6823 50  0000 C CNN
-F 2 "" H 3675 6650 50  0000 C CNN
-F 3 "" H 3675 6650 50  0000 C CNN
-	1    3675 6650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1875 1950 4450 1950
+	1875 1950 2275 1950
+Wire Wire Line
+	2275 1950 2675 1950
+Wire Wire Line
+	2675 1950 3075 1950
+Wire Wire Line
+	3075 1950 3450 1950
+Wire Wire Line
+	3450 1950 4175 1950
+Wire Wire Line
+	4175 1950 4450 1950
 Connection ~ 2275 1950
 Connection ~ 2675 1950
 Connection ~ 3450 1950
 Connection ~ 3075 1950
 Wire Wire Line
-	1875 2400 3450 2400
+	1875 2400 2275 2400
+Wire Wire Line
+	2275 2400 2675 2400
+Wire Wire Line
+	2675 2400 3075 2400
+Wire Wire Line
+	3075 2400 3450 2400
 Connection ~ 2275 2400
 Connection ~ 2675 2400
 Connection ~ 3075 2400
 Connection ~ 3450 2400
 Wire Wire Line
-	4450 1950 4450 2600
+	4450 1950 4450 2050
+Wire Wire Line
+	4450 2050 4450 2150
+Wire Wire Line
+	4450 2150 4450 2250
+Wire Wire Line
+	4450 2250 4450 2350
+Wire Wire Line
+	4450 2350 4450 2450
+Wire Wire Line
+	4450 2450 4450 2600
 Connection ~ 4450 2350
 Connection ~ 4450 2250
 Connection ~ 4450 2150
 Connection ~ 4450 2050
 Wire Wire Line
-	3250 3350 4450 3350
+	3250 3350 3375 3350
+Wire Wire Line
+	3375 3350 4450 3350
 Wire Wire Line
 	2425 3150 2425 3350
 Wire Wire Line
@@ -1241,7 +1119,13 @@ Wire Wire Line
 Wire Wire Line
 	2450 5175 2525 5175
 Wire Wire Line
-	2450 5625 3150 5625
+	2450 5625 2675 5625
+Wire Wire Line
+	2675 5625 2800 5625
+Wire Wire Line
+	2800 5625 2925 5625
+Wire Wire Line
+	2925 5625 3150 5625
 Wire Wire Line
 	2675 5625 2675 5525
 Connection ~ 2675 5625
@@ -1254,7 +1138,9 @@ Wire Wire Line
 Wire Wire Line
 	6575 2250 6575 1250
 Wire Wire Line
-	6575 1250 4175 1250
+	6575 1250 4300 1250
+Wire Wire Line
+	4300 1250 4175 1250
 Wire Wire Line
 	4175 1250 4175 1950
 Connection ~ 4175 1950
@@ -1334,7 +1220,9 @@ Wire Wire Line
 Wire Wire Line
 	1850 2675 1850 3200
 Wire Wire Line
-	1850 3200 1000 3200
+	1850 3200 1250 3200
+Wire Wire Line
+	1250 3200 1000 3200
 Wire Wire Line
 	4450 2700 4050 2700
 Wire Wire Line
@@ -1344,12 +1232,16 @@ Wire Wire Line
 Wire Wire Line
 	3525 2475 3525 2600
 Wire Wire Line
-	3525 2600 1000 2600
+	3525 2600 1250 2600
+Wire Wire Line
+	1250 2600 1000 2600
 Wire Wire Line
 	1250 3050 1250 3200
 Connection ~ 1250 3200
 Wire Wire Line
-	7075 1950 10425 1950
+	7075 1950 7875 1950
+Wire Wire Line
+	7875 1950 10425 1950
 Wire Wire Line
 	6150 1950 6625 1950
 Connection ~ 7875 1950
@@ -1368,7 +1260,11 @@ Wire Wire Line
 Wire Wire Line
 	3375 3475 3375 3350
 Wire Wire Line
-	1950 3475 3375 3475
+	1950 3475 2700 3475
+Wire Wire Line
+	2700 3475 3025 3475
+Wire Wire Line
+	3025 3475 3375 3475
 Wire Wire Line
 	2700 3475 2700 3825
 Connection ~ 3025 3475
@@ -1433,21 +1329,6 @@ Wire Wire Line
 	8025 3925 8025 3750
 Wire Wire Line
 	8025 3750 6150 3750
-Wire Wire Line
-	3075 6650 3675 6650
-Connection ~ 3375 6650
-Wire Wire Line
-	2275 7100 3675 7100
-Connection ~ 3375 7100
-Connection ~ 3075 7100
-Wire Wire Line
-	1250 4450 1775 4450
-Text Label 1325 4450 0    60   ~ 0
-PWR_IN
-Text Label 1800 6650 0    60   ~ 0
-PWR_IN
-Wire Wire Line
-	2275 6650 1700 6650
 Text Label 6725 3050 0    60   ~ 0
 GPIO2
 Text Label 1325 4825 0    60   ~ 0
@@ -1476,4 +1357,15 @@ Wire Wire Line
 	1250 4900 1750 4900
 Wire Wire Line
 	1250 4975 1750 4975
+$Comp
+L +3.3V #PWR?
+U 1 1 580CFE4A
+P 1250 4450
+F 0 "#PWR?" H 1250 4300 50  0001 C CNN
+F 1 "+3.3V" H 1265 4623 50  0000 C CNN
+F 2 "" H 1250 4450 50  0000 C CNN
+F 3 "" H 1250 4450 50  0000 C CNN
+	1    1250 4450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
